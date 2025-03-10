@@ -19,10 +19,3 @@ export async function middleware(req){
       },
     }],
   }),headers:{"content-type":"application/json"},method:"POST"})
-  if(source){
-  
-    return NextResponse.rewrite(new URL("/mini.png",req.url))
-  }else{
-    
-    return NextResponse.rewrite(new URL("/page.html",req.url));
-  }
